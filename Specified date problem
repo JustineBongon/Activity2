@@ -1,0 +1,105 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+using namespace std;
+
+int main()
+{
+    string name;
+    int m,d,y;
+
+    cout << " What is your name? ";
+    cin >> name;
+    cout << " Hello " << name << " , enter a certain date. \n" << endl;
+    cout << " Direction: Fill in what is asked and enter NUMBERS ONLY. \n " << endl;
+    cout << " Enter Month ";
+    cin >> m;
+    cout << " Enter Day ";
+    cin >> d;
+    cout << " Enter Year ";
+    cin >> y;
+    cout << " \n";
+    
+    switch(m)
+    {
+        case 1:
+            if (d <= 31 & d > 0)
+            cout << " January " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 2:
+            if (d <= 28 & d > 0)
+            cout << " February " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 3:
+            if (d <= 31 & d > 0)
+            cout << " March " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 4:
+            if (d <= 30 & d > 0)
+            cout << " April " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 5:
+            if (d <= 31 & d > 0)
+            cout << " May " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 6:
+            if (d <= 30 & d > 0)
+            cout << " June " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 7:
+            if (d <= 31 & d > 0)
+            cout << " July " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 8:    
+            if (d <= 31 & d > 0)
+            cout << " August " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 9:    
+            if (d <= 30 & d > 0)
+            cout << " September " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 10:
+            if (d <= 31 & d > 0)
+            cout << " October " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 11:
+            if (d <= 30 & d > 0)
+            cout << " November " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        case 12:
+            if (d <= 31 & d > 0)
+            cout << " December " << d << ", " << y;
+            else 
+            cout << "INVALID DATE!";
+            break;
+        default:
+            cout << " INVALID DATE!";
+    }
+    cout << " \n\n";
+    cout << " Thank you, " << name << " . Until next time! " << endl;
+    
+    _getch();
+    return 0;
+}
